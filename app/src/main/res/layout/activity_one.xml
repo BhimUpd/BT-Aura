@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityOne"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/generator_background">
+
+    <ImageView
+        android:layout_width="454dp"
+        android:layout_height="216dp"
+        android:scaleY="-1"
+        android:src="@drawable/intersect" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="enableBluetooth"
+        android:layout_marginTop="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Enable Bluetooth  "
+        android:drawableLeft="@drawable/bluetooth"
+        android:textColor="#fff"
+        android:background="@drawable/button_design"
+        android:textSize="20sp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20sp"
+        android:onClick="bluetoothStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Bluetooth Stauts   "
+        android:textSize="20sp"
+        android:background="@drawable/button_design2"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/bluetooth"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="showPairedDevices"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="  Show Paired Devices  "
+        android:drawableLeft="@drawable/bluetooth"
+        android:background="@drawable/button_design"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+
+    <ListView
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#77FFEB3B"
+        android:id="@+id/listViewBluetoothDevices"
+        />
+
+
+
+</LinearLayout>
